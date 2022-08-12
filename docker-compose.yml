@@ -27,7 +27,7 @@ services:
   phpfpm:
     image: 'php:8.1-fpm'
     ports:
-      - ':9000'
+      - '9000:9000'
     volumes:
       - ./:/usr/share/nginx/app
     networks:
