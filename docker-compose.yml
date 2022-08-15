@@ -31,7 +31,7 @@ services:
     ports:
       - '9000:9000'
     volumes:
-      - ./:/usr/share/nginx/amis-api
+      - ./site2:/usr/share/nginx/amis-api
     networks:
       - internal
 
