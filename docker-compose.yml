@@ -2,6 +2,7 @@ version: '3'
 
 services:
   nginx:
+    image: amis-test
     build:
       context: .
       dockerfile: Dockerfile

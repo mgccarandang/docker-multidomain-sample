@@ -1,5 +1,17 @@
 FROM nginx:alpine
 
+# Build variables
+#ARG app_key
+ARG app_debug
+
+# Environement variables
+
+ENV APP_NAME "UPLB DX AMIS"
+ENV APP_ENV test
+#ENV APP_KEY $app_key
+ENV APP_DEBUG $app_debug
+
+
 RUN rm /etc/nginx/conf.d/default.conf
 
 COPY ./nginx/amis.conf /etc/nginx/conf.d/amis.conf
